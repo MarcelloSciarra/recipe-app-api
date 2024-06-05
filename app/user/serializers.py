@@ -9,6 +9,11 @@ from django.utils.translation import gettext as _
 
 from rest_framework import serializers
 
+# Model serializer is a child class of Serializer which
+# automatically generates fields based on the model's fields.
+# It provides default implementations for common operations
+# Useful for CRUD operations
+
 
 class UserSerializer(serializers.ModelSerializer):
     """Serializer for the user object."""
